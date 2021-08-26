@@ -1,0 +1,14 @@
+#definitive{
+    font-family: 'Kaisei Opti', serif;
+    font-size: 16px;
+}
+
+.header-container{
+    text-align: center;
+}
+
+.content-container{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
