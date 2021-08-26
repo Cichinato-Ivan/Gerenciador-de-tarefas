@@ -1,14 +1,22 @@
 #definitive{
     font-family: 'Kaisei Opti', serif;
     font-size: 16px;
+    background-color: #87CEEB;
 }
 
 .header-container{
     text-align: center;
+    border: 4px solid orange;
 }
 
-.content-container{
-    width: 100%;
-    display: flex;
-    text-align: center;
+.newly-added{
+    border: 1px solid red;
+}
+
+.total-accounts{
+    border: 1px solid green;
+}
+
+.monthly-income{
+    border: 1px solid blue;
 }
