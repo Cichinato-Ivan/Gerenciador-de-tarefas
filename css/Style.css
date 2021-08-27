@@ -24,10 +24,6 @@
     border-radius: 30px;
 }
 
-ul li a {
-    background-color: transparent;
-}
-
 li, a{
     text-decoration: none;
     list-style-type: none;
