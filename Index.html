@@ -26,14 +26,19 @@
             </h3>
             <div class="row d-flex content-center mt-3">
                 <div class="input-group-append">
-                    Nome:
-                    <input type="text form-control">
-                    Valor:
-                    <input type="text form-control">
-                    N° de Parcelas:
-                    <input type="text form-control">
-                    Descreva sua despesa:
-                    <input type="text form-control">
+                   <form id="form-account-create">
+                        <label for="form-name">Nome:</label>
+                        <input type="text form-control" id="form-name" name="name">
+
+                        <label for="form-price">Valor:</label>
+                        <input type="text form-control" id="form-price" name="price">
+
+                        <label for="form-portion">N° de Parcelas:</label>
+                        <input type="text form-control" id="form-portion" name="portion">
+
+                        <label for="form-description">Descreva sua despesa:</label>
+                        <input type="text form-control" id="form-description" name="description">
+                   </form>
                 </div>
                 <div class="input-group-append mt-2">
                     <button type="submit" class="btn btn-success ">
