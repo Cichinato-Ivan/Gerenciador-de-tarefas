@@ -1,11 +1,11 @@
-var name = document.querySelector("#form-name");
-var price = document.querySelector("#form-price");
-var portion = document.querySelector("#form-portion");
-var description = document.querySelector("#form-description");
+var name = document.querySelector("#inputName");
+var price = document.querySelector("#inputPrice");
+var portion = document.querySelector("#inputPortion");
+var description = document.querySelector("#inputDescription");
 
 
-var fields = document.querySelector("#form-accounts-create [name]");
+var fields = document.querySelectorAll("#form-accounts-create [name]");
 
 fields.forEach(function(field, index) {
-    console.log(field.name);
+    console.log(field);
 });
