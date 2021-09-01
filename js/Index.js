@@ -1,32 +1,26 @@
 var fields = document.querySelectorAll("#form-accounts-create [name]");
-var user = {};
+var accounts = {};
 
 function addLine(dataAccounts) {
   
-    var ul = document.getElement("ul");
-  
-  ul.innerHTML = `
-    
-    <ul class="list-group-item rounded-3">
-        <li>
-            <div class="row mt-2">
-                <div class="col-md-10">
-                        <p>${dataAccounts.name}</p>
-                        <p>${dataAccounts.price}</p>
-                        <p>${dataAccounts.portion}</p>
-                        <p>${dataAccounts.description}</p>
-                </div>
-                <div class="col-md-2">
-                    <a href="">
-                        <img src="./icons/info-square.svg" alt="" width="25px" height="25px">
-                    </a>
-                </div>
-            </div>
-        </li>
-    </ul>
-  `;
+    var tr = document.createElement("tr");
 
-  document.getElementsById("list-accounts").appendChild("ul");
+    tr.innerHTML = `
+    
+    <tr>
+        <td>${dataAccounts.name}</td>
+        <td>${dataAccounts.price}</td>
+        <td>${dataAccounts.portion}</td>
+        <td>${dataAccounts.description}</td>
+        <td>
+            <button type="button" class="btn btn-danger btn-flat">Excluir</button>
+        </td>
+    </tr>
+
+    `;
+  
+    document.getElementById("table-accounts").appendChild(tr);
+
 }
 
 document.getElementById("form-accounts-create").addEventListener("submit", function(event){
@@ -35,10 +29,10 @@ document.getElementById("form-accounts-create").addEventListener("submit", funct
 
     fields.forEach(function(field, index) {
 
-        user[field.name] = field.value;
+        accounts[field.name] = field.value;
     
     });
     
-    addLine(user);
+    addLine(accounts);
 
 });
