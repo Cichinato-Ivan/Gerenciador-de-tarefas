@@ -3,19 +3,17 @@ var accounts = {};
 
 function addLine(dataAccounts) {
   
-    var tr = document.createElement("tr");
-
-    tr.innerHTML = `
+    document.getElementById("table-accounts").innerHTML = `
     
-    <tr>
-        <td>${dataAccounts.name}</td>
-        <td>${dataAccounts.price}</td>
-        <td>${dataAccounts.portion}</td>
-        <td>${dataAccounts.description}</td>
-        <td>
-            <button type="button" class="btn btn-danger btn-flat">Excluir</button>
-        </td>
-    </tr>
+        <tr>
+            <td>${dataAccounts.name}</td>
+            <td>${dataAccounts.price}</td>
+            <td>${dataAccounts.portion}</td>
+            <td>${dataAccounts.description}</td>
+            <td>
+                <button type="button" class="btn btn-danger btn-flat">Excluir</button>
+            </td>
+        </tr>
 
     `;
   

@@ -87,58 +87,36 @@
                     <div class="monthly-income p-5">
                         <h2>Renda mensal</h2>
                         <div>
-                            <div class="row d-flex content-center mt-2">
-                                <div class="input-group-append">
-                                    Nome:
-                                    <input type="text form-control">
+                            <div class="content-center">
+                                <form id="form-wage-create">
+                                    <label for="inputIcome">Nome:</label>
+                                    <input type="text" id="inputIcome">
                                     <br>
-                                    Valor:
-                                    <input type="text form-control">
-                                </div>
-                                <div class="input-group-append mt-2">
-                                    <button type="submit" class="btn btn-success ">
-                                        Adicionar
-                                    </button>
-                                </div>
+                                    <label for="inputProfit">Valor:</label>
+                                    <input type="text" id="inputProfit">
+                                    <div class="input-group-append mt-2">
+                                        <button type="submit" class="btn btn-success ">
+                                            Adicionar
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
-                            <ul class="list-group-item mt-2 rounded-3">
-                                <li>
-                                    <div class="row mt-2">
-                                        <div class="col-md-10">
-                                                Renda1
-                                        </div>
-                                        <div class="col-md-2">
-                                            <a href="">
-                                                <img src="./icons/info-square.svg" alt="" width="25px" height="25px">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row mt-2">
-                                        <div class="col-md-10">
-                                                Renda2
-                                        </div>
-                                        <div class="col-md-2">
-                                            <a href="">
-                                                <img src="./icons/info-square.svg" alt="" width="25px" height="25px">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="row mt-2">
-                                        <div class="col-md-10 ">
-                                                Renda3
-                                        </div>
-                                        <div class="col-md-2">
-                                            <a href="">
-                                                <img src="./icons/info-square.svg" alt="" width="25px" height="25px">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                            <div>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Valor</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table-wage">
+                                        <tr>
+                                            <td>Nome</td>
+                                            <td>Valor</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         
                         <h2>
