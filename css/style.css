@@ -1,0 +1,17 @@
+body {
+    background-color: #98FB98;
+}
+
+/* Área de trabalho */
+
+#profile{
+    border: 3px solid red;
+}
+
+#list{
+    border: 3px solid blue;
+}
+
+#bills {
+    border: 3px solid black;
+}
