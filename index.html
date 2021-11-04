@@ -14,20 +14,16 @@
     <div>
         <div class="row">
             <!-- Logo -->
-            <header class="col-8">
+            <header class="col-6">
                 Finans - APP
             </header>
             <!-- Barra de navegação -->
-            <nav class="col">
-                <ul>
-                    <li>
-                        <a href="#">Sair</a>
-                    </li>
-                    <li>
-                        <input type="search" name="" id="">
-                        <input type="submit" value="Pesquisar">
-                    </li>
-                </ul>
+            <nav class="col-6">
+                        <a class="nav-link" href="#">Sair</a>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                        </form>
             </nav>
         </div>
 
@@ -35,20 +31,40 @@
         <div class="row">
 
             <!-- Começo de perfil -->
-            <section id="profile" class="col-3">
+            <section id="profile" class=" ml-6 col-3">
                 Área perfil
+
+                <figure>
+                    <img class="photoProfile" src="./img/perfil.png" alt="foto de perfil">
+                </figure>
+
+                <p>
+                    Olá Fulano, <br>
+                    vamos pagar nossas contas?
+                </p>
+
+                <div>
+                    <p>
+                        Você tem em conta hoje <br>
+                        R$3865,69
+                    </p>
+                </div>
             </section>
             <!-- Fim de perfil -->
 
             <!-- Começo de Listas -->
             <section id="list" class="col">
+
                 Lista de despesas
+
             </section>
             <!-- Fim Listas -->
             
             <!-- Começo de Cadastro de despesas -->
             <section id="bills" class="col">
+
                 Cadastros de despesas
+
             </section>
             <!-- Fim de Cadastro de despesas -->
 

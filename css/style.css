@@ -8,6 +8,11 @@ body {
     border: 3px solid red;
 }
 
+#profile .photoProfile{
+    width: 50%;
+    border-radius: 50%;
+}
+
 #list{
     border: 3px solid blue;
 }
