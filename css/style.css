@@ -1,11 +1,10 @@
 body{
-    background-color: #DCDCDC;
+    background-color: #7B68EE;
     font-family: 'Work Sans', sans-serif;
 }
-
+/* Config HEADER */
 #header-container{
-    background-color: #7B68EE;
-    border: 1px solid black;
+    margin: 20px;
     width: 100%;
     height: 100px;
     display: flex;
@@ -19,7 +18,48 @@ body{
     height: auto;
 }
 
+.header-item input[type=button]{
+    background-color: #DCDCDC;
+    width: 80px;
+    height: 30px;
+    margin-right: 0;
+    border: none;
+    border-radius: 40px 0 0 40px;
+}
+
+.header-item input[type=search]{
+    background-color: #DCDCDC;
+    width: auto;
+    height: 30px;
+    margin-left: 0;
+    border: none;
+    border-radius: 0 40px 40px 0;
+}
+
+.header-item input[type=button]:hover{
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
 figure img {
     width: 100px;
     height: 80px;
+}
+
+/* Config APP-CONTAINER */
+#app-container{
+    border: 1px solid black;
+    width: 100%;
+    height: 400px;
+    display:flex ;
+    justify-content:flex-start;
+}
+
+.app-item{
+    border: 1px solid goldenrod;
+    height: fixed;
+}
+
+.list{
+    width: 100%;
 }
