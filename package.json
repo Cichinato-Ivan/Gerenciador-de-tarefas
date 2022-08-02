@@ -1,0 +1,28 @@
+{
+  "name": "gerenciador-de-tarefas",
+  "version": "1.0.0",
+  "description": "Esse projeto será desenvolvido com:",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemom server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cichinato-Ivan/Gerenciador-de-tarefas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "express": "4.16.3",
+    "multer": "1.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.17.3"
+  },
+  "bugs": {
+    "url": "https://github.com/Cichinato-Ivan/Gerenciador-de-tarefas/issues"
+  },
+  "homepage": "https://github.com/Cichinato-Ivan/Gerenciador-de-tarefas#readme"
+}
